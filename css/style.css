@@ -114,17 +114,69 @@ small {
     background-size: cover;
     justify-content: center;
     flex-flow: column;
-    color: #fff;
-    font-size: 58px;
-    
 }
-.bg-deco{
-    background: url(../images/);
-}
-.main-visual h2{
+
+.main-visual h2 {
     font-family: "Noto Serif JP", serif;
     font-weight: 600;
+    font-size: 58px;
+    color: #fff;
+    margin-left: 10%;
 }
-.main-visual p{
+.main-visual p {
     font-family: "Noto Serif JP", serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #fff;
+    margin-left: 10%;
+}
+.main-visual-text {
+    display: flex;
+    width: 100%;
+    height: 70%;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.bg-deco {
+    display: flex;
+    width: 100%;
+    height: 30%;
+    background: url(../images/bg-deco.svg) no-repeat bottom;
+    align-items: flex-end;
+}
+
+.contents-wrap {
+    background: rgb(243, 241, 225);
+    background: linear-gradient(
+    180deg,
+        rgba(243, 241, 225, 1) 0%,
+        rgba(243, 241, 225, 1) 35%,
+        rgba(225, 248, 251, 1) 60%,
+        rgba(225, 248, 251, 1) 100%
+    );
+}
+.concept-title{
+    text-align: center;
+    padding: 128px;
+}
+.concept-title h2{
+    font-size: 40px;
+}
+.concept-title p{
+    padding-top: 8px;
+    font-size: 16px;
+}
+.concept-about{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+}
+.concept-about-text{
+    flex-flow: column;
+    width: 50%;
+}
+.concept-about-image{
+    width: 50%;
 }
