@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500;700;900&family=Noto+Serif+JP:wght@600&display=swap"
         rel="stylesheet">
@@ -27,10 +29,11 @@
             </ul>
         </nav>
     </header>
-    <div class="mainVisual">
-        <h2>体も心も ほっと。</h2>
-        <p>サウナカフェ「サウナタウコ」は、北欧のサウナ文化とコーヒー文化を
-            組み合わせたユニークなカフェです。</p>
+    <div class="main-visual">
+            <h2>体も心も ほっと。</h2>
+            <p>サウナカフェ「サウナタウコ」は、北欧のサウナ文化とコーヒー文化を
+                組み合わせたユニークなカフェです。</p>
+                <div class="bg-deco"></div>
     </div>
     <div>
         <h2>サウナ後の心地よい時間をゆったりとしたカフェスペースで</h2>
@@ -63,22 +66,34 @@
         <div class="drink_link">drink</div>
     </div>
     <div class="reserve_bar">ご予約はこちら</div>
-    <footer>
-        <h2>contact</h2>
-        <p>お問い合わせはお電話、またはInstagramのDMにて承っております。</p>
-        <a href="https://www.instagram.com/"><img src="images/instagram.svg" alt="instagram"></a>
-        <iframe
+    <footer id="contact">
+        <div class="contact-top">
+            <div class="contact-title">
+                <h2>contact</h2>
+                <p>お問い合わせはお電話、またはInstagramのDMにて承っております。</p>
+            </div>
+            <a href="https://www.instagram.com/"><img src="images/instagram.svg" alt="instagram"></a>
+
+        </div> <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d520.2419600009422!2d135.50299331433283!3d34.70630062989415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e69449e0775d%3A0x3a2a073efc2ceb7c!2zRUND44Kz44Oz44OU44Ol44O844K_5bCC6ZaA5a2m5qChMuWPt-mkqA!5e0!3m2!1sja!2sjp!4v1690526195363!5m2!1sja!2sjp"
             style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
             class="google_maps"></iframe>
-        <h3>電話番号</h3>
-        <p>0796-24-6147</p>
-        <h3>営業時間</h3>
-        <p>月～金　12:00～21:00
-            土日祝　9:00～21:00</p>
-        <h3>所在地</h3>
-        <p>〒000-0000 大阪府大阪市
-            大阪区大阪３−２−１</p>
+        <div class="contact-about">
+            <div class="contact-about-contents">
+                <h3>電話番号</h3>
+                <a href="tel:0796-24-6147">0796-24-6147</a>
+            </div>
+            <div class="contact-about-contents">
+                <h3>営業時間</h3>
+                <p>月～金　12:00～21:00<br>
+                    土日祝　9:00～21:00</p>
+            </div>
+            <div class="contact-about-contents">
+                <h3>所在地</h3>
+                <p>〒000-0000 大阪府大阪市<br>
+                    大阪区大阪３−２−１</p>
+            </div>
+        </div>
         <small>&copy; 2023 SaunaTauko</small>
     </footer>
 </body>
