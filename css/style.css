@@ -110,7 +110,7 @@ footer {
 }
 .google_maps {
     width: 100%;
-    height: 372px;
+    height: 50vh;
 }
 .contact-about {
     display: flex;
@@ -180,7 +180,7 @@ small {
 
 .concept-title {
     text-align: center;
-    padding: 128px;
+    padding: 128px 0;
 }
 .concept-title h2 {
     font-size: 40px;
@@ -232,7 +232,7 @@ small {
 .menu-btn-wrap h3 {
     font-size: 32px;
     text-align: center;
-    padding: 0 0 8px;
+    padding: 16px 0 8px;
 }
 .menu-btn {
     display: flex;
@@ -240,7 +240,7 @@ small {
     font-size: 40px;
 }
 .food_link {
-    background: url(../images/farhad-ibrahimzade-23ddrOR8POM-unsplash.jpg)
+    background: url(../images/food_link.jpg)
         no-repeat;
     background-size: cover;
     color: #3e3e3e;
