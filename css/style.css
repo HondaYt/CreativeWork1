@@ -297,3 +297,39 @@ small {
     color: rgba(113, 206, 218,.9);
     text-shadow: 0px 0px 4px #eee, 0 0 #000;
 }
+.reserve-title {
+    text-align: center;
+    padding: 128px 0;
+}
+.reserve-title h2 {
+    font-size: 32px;
+    padding-left: 16px;
+}
+.reserve-count-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.reserve-count{
+    margin: 32px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: #71CEDA solid 3px;
+    background: #fff;
+    color: #71CEDA;
+    font-size: 24px;
+}
+#reserve-now{
+    background: #71CEDA;
+    color: #fff;
+}
+.border{
+    border: #71CEDA solid 1px;
+    width: 45px;
+
+}
