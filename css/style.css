@@ -6,9 +6,10 @@
     color: #3e3e3e;
     font-family: "Noto Sans JP", "Helvetica Neue", Arial,
         "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    /* border: tomato solid; */
 }
 
-/* ナビゲーション */
+/* ヘッダー */
 nav {
     width: 100%;
     height: 10vh;
@@ -21,7 +22,7 @@ nav {
 .logo {
     display: flex;
     width: 50%;
-    height: 100%;
+    height: 8vh;
     align-items: center;
 }
 .logo a {
@@ -35,10 +36,10 @@ nav {
     justify-content: space-around;
     align-items: center;
 }
-.navReserve {
+.nav-reserve {
     display: flex;
     width: 128px;
-    height: 60px;
+    height: 8vh;
     border-radius: 10px;
     background: #f46969;
     box-shadow: -4px -4px 8px 0px #fff, 4px 4px 8px 0px #c6c6c6,
@@ -52,15 +53,45 @@ nav {
     justify-content: center;
     text-align: center;
     align-items: center;
-    margin-right: 32px;
 }
-.navReserve:hover {
+.nav-reserve:hover {
     background: #f46969;
     box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.15) inset,
         0px 0px 4px 2px rgba(0, 0, 0, 0.15) inset,
         2px 2px 4px 2px rgba(255, 255, 255, 0.3) inset;
 }
-/* コンタクト */
+/* 予約バー */
+.reserve-bar-wrap {
+    display: flex;
+    justify-content: center;
+    padding: 64px 0;
+}
+.reserve-bar {
+    display: flex;
+    width: 512px;
+    height: 70px;
+    border-radius: 50vh;
+    background: #f46969;
+    box-shadow: -4px -4px 8px 0px #fff, 4px 4px 8px 0px #c6c6c6,
+        1px 1px 4px 2px rgba(255, 255, 255, 0.3) inset,
+        -4px -4px 4px 0px rgba(0, 0, 0, 0.15) inset;
+    color: #fff;
+    font-family: Noto Sans JP;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.reserve-bar:hover {
+    background: #f46969;
+    box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.15) inset,
+        0px 0px 4px 2px rgba(0, 0, 0, 0.15) inset,
+        2px 2px 4px 2px rgba(255, 255, 255, 0.3) inset;
+    transition: all 0.5s;
+}
+/*フッター */
 footer {
     background: #f5f5f5;
 }
@@ -141,42 +172,128 @@ small {
 .bg-deco {
     display: flex;
     width: 100%;
-    height: 30%;
+    padding-top: 20vh;
+    height: 30vh;
     background: url(../images/bg-deco.svg) no-repeat bottom;
+    background-size: cover;
     align-items: flex-end;
 }
 
-.contents-wrap {
+.concept-title {
+    text-align: center;
+    padding: 128px;
+}
+.concept-title h2 {
+    font-size: 40px;
+}
+.concept-title p {
+    padding-top: 8px;
+    font-size: 16px;
+}
+.concept-about {
+    display: flex;
+    padding: 0 20% 64px;
+    gap: 32px;
+}
+.concept-wrap {
     background: rgb(243, 241, 225);
     background: linear-gradient(
-    180deg,
+        180deg,
         rgba(243, 241, 225, 1) 0%,
-        rgba(243, 241, 225, 1) 35%,
+        rgba(243, 241, 225, 1) 30%,
         rgba(225, 248, 251, 1) 60%,
         rgba(225, 248, 251, 1) 100%
     );
 }
-.concept-title{
-    text-align: center;
-    padding: 128px;
-}
-.concept-title h2{
-    font-size: 40px;
-}
-.concept-title p{
-    padding-top: 8px;
-    font-size: 16px;
-}
-.concept-about{
-    display: flex;
-    width: 80%;
-    justify-content: center;
-    align-items: center;
-}
-.concept-about-text{
+.concept-about-text {
     flex-flow: column;
     width: 50%;
 }
-.concept-about-image{
+.concept-about-text h3 {
+    font-size: 40px;
+    margin: 0 0 8px;
+}
+.concept-about-text p {
+    font-size: 20px;
+    line-height: 1.75em;
+}
+.concept-about img {
     width: 50%;
+    border-radius: 32px;
+}
+
+.text-replace {
+    order: 1;
+}
+.image-replace {
+    order: 0;
+}
+
+/* メニューボタン */
+.menu-btn-wrap h3 {
+    font-size: 32px;
+    text-align: center;
+}
+.menu-btn {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+.food_link {
+    background: url(../images/farhad-ibrahimzade-23ddrOR8POM-unsplash.jpg)
+        no-repeat;
+    background-size: cover;
+    color: #3e3e3e;
+    text-shadow: -1px -1px 4px #fff, -1px 0 4px #fff, -1px 1px 4px #fff,
+        0 -1px 4px #fff, 0 1px 4px #fff, 1px -1px 4px #fff, 1px 0 4px #fff,
+        1px 1px 4px #fff;
+    display: flex;
+    width: 500px;
+    height: 320px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 32px 0 0 32px;
+}
+
+.drink_link {
+    background: url(../images/drink_link.jpeg) no-repeat;
+    background-size: cover;
+    color: #fff;
+    text-shadow: -1px -1px 4px #3e3e3e, -1px 0 4px #3e3e3e, -1px 1px 4px #3e3e3e,
+        0 -1px 4px #3e3e3e, 0 1px 4px #3e3e3e, 1px -1px 4px #3e3e3e,
+        1px 0 4px #3e3e3e, 1px 1px 4px #3e3e3e;
+    display: flex;
+    width: 500px;
+    height: 320px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 32px 32px 0;
+}
+.food_link:hover,
+.drink_link:hover {
+    opacity: 0.7;
+}
+
+/* 予約画面 */
+.main-reserve{
+        display: flex;
+        width: 100%;
+        height: 60vh;
+        background-size: cover;
+        justify-content: center;
+        flex-flow: column;
+}
+.main-reserve-text{
+    display: flex;
+    width: 100%;
+    padding-top: 10vh;
+    justify-content: center;
+    align-items: flex-end;
+}
+.main-reserve-text h2{
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 0;
+    color: rgba(113, 206, 218,.9);
+    text-shadow: 0px 0px 4px #eee, 0 0 #000;
 }
