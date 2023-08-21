@@ -1,4 +1,4 @@
-.main-visual {
+.main_visual {
     display: flex;
     width: 100%;
     height: 90vh;
@@ -8,21 +8,21 @@
     flex-flow: column;
 }
 
-.main-visual h2 {
+.main_visual h2 {
     font-family: "Noto Serif JP", serif;
     font-weight: 600;
     font-size: 58px;
     color: #fff;
     margin-left: 10%;
 }
-.main-visual p {
+.main_visual p {
     font-family: "Noto Serif JP", serif;
     font-weight: 600;
     font-size: 18px;
     color: #fff;
     margin-left: 10%;
 }
-.main-visual-text {
+.main_visual_text {
     display: flex;
     width: 100%;
     height: 70%;
@@ -32,23 +32,23 @@
 
 
 
-.concept-title {
+.concept_title {
     text-align: center;
     padding: 128px 0;
 }
-.concept-title h2 {
+.concept_title h2 {
     font-size: 40px;
 }
-.concept-title p {
+.concept_title p {
     padding-top: 8px;
     font-size: 16px;
 }
-.concept-about {
+.concept_about {
     display: flex;
     padding: 0 20% 64px;
     gap: 32px;
 }
-.concept-wrap {
+.concept_wrap {
     background: rgb(243, 241, 225);
     background: linear-gradient(
         180deg,
@@ -58,37 +58,37 @@
         rgba(225, 248, 251, 1) 100%
     );
 }
-.concept-about-text {
+.concept_about_text {
     flex-flow: column;
     width: 50%;
 }
-.concept-about-text h3 {
+.concept_about_text h3 {
     font-size: 40px;
     margin: 0 0 8px;
 }
-.concept-about-text p {
+.concept_about_text p {
     font-size: 20px;
     line-height: 1.75em;
 }
-.concept-about img {
+.concept_about img {
     width: 50%;
     border-radius: 32px;
 }
 
-.text-replace {
+.text_replace {
     order: 1;
 }
-.image-replace {
+.image_replace {
     order: 0;
 }
 
 /* メニューボタン */
-.menu-btn-wrap h3 {
+.menu_btn_wrap h3 {
     font-size: 32px;
     text-align: center;
     padding: 32px 0 16px;
 }
-.menu-btn {
+.menu_btn {
     display: flex;
     justify-content: center;
     font-size: 40px;
