@@ -25,7 +25,7 @@
     text-align: center;
     padding: 64px 0 0;
 }
-.reserve_title h2 {
+.reserve_title h3 {
     font-size: 32px;
     padding-left: 16px;
 }
@@ -61,7 +61,7 @@
 }
 
 .concept_wrap {
-    background: rgb(243, 241, 225);
+    background: #f3f1e1;
     background: linear-gradient(
         180deg,
         rgba(243, 241, 225, 1) 0%,
@@ -189,7 +189,7 @@ option[selected][disabled] {
     padding: 32px 0 16px;
     font-weight: bold;
 }
-.form_explanation{
+.form_explanation {
     font-size: 14px;
     color: #5e5e5e;
     padding: 0 0 0 4px;
@@ -211,13 +211,12 @@ option[selected][disabled] {
 }
 
 .tos_wrap h2 {
-
     font-size: 18px;
 }
 .tos_confirm_text {
     padding: 0 0 0 4px;
 }
-.tR{
+.tR {
     text-align: right;
 }
 .reserve_next {
@@ -233,27 +232,27 @@ option[selected][disabled] {
     background-color: #fff;
     color: #71ceda;
     font-size: 18px;
+    position: relative;
+}
+.reserve_next::after {
+    position: absolute;
+    right: 20px;
+    border-top: 3px solid #71ceda;
+    border-right: 3px solid #71ceda;
+    width: 8px;
+    height: 8px;
+    transform: rotate(45deg);
+    content: '';
+}
+.reserve_next:hover:after {
+    border-top: 3px solid #fff;
+    border-right: 3px solid #fff;
 }
 .reserve_next:hover {
     background-color: #71ceda;
     color: #fff;
 }
 
-.arrow {
-    transform: rotate(45deg);
-    width: 10px;
-    height: 10px;
-    margin-left: 50px;
-    border-top: 3px solid #71ceda;
-    border-right: 3px solid #71ceda;
-}
-.arrow_wrap {
-    width: 0;
-}
-.reserve_next:hover .arrow_wrap .arrow {
-    border-top: 3px solid #fff;
-    border-right: 3px solid #fff;
-}
 .reserve_next_wrap {
     width: 100%;
     padding: 0 0 64px;

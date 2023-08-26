@@ -72,6 +72,7 @@
 }
 .concept_about img {
     width: 50%;
+    height: auto;
     border-radius: 32px;
 }
 
@@ -89,38 +90,36 @@
     padding: 32px 0 16px;
 }
 .menu_btn {
+    width: 60vw;
     display: flex;
-    justify-content: center;
     font-size: 40px;
+    margin: 0 auto;
+}
+.food_link,.drink_link{
+    display: flex;
+    width: 30vw;
+    height: 320px;
+    justify-content: center;
+    align-items: center;
 }
 .food_link {
     background: url(../images/food_link.jpg)
-        no-repeat;
+        no-repeat center;
     background-size: cover;
     color: #3e3e3e;
     text-shadow: -1px -1px 4px #fff, -1px 0 4px #fff, -1px 1px 4px #fff,
         0 -1px 4px #fff, 0 1px 4px #fff, 1px -1px 4px #fff, 1px 0 4px #fff,
         1px 1px 4px #fff;
-    display: flex;
-    width: 500px;
-    height: 320px;
-    justify-content: center;
-    align-items: center;
     border-radius: 32px 0 0 32px;
 }
 
 .drink_link {
-    background: url(../images/drink_link.jpg) no-repeat;
+    background: url(../images/drink_link.jpg) no-repeat center;
     background-size: cover;
     color: #fff;
     text-shadow: -1px -1px 4px #3e3e3e, -1px 0 4px #3e3e3e, -1px 1px 4px #3e3e3e,
         0 -1px 4px #3e3e3e, 0 1px 4px #3e3e3e, 1px -1px 4px #3e3e3e,
         1px 0 4px #3e3e3e, 1px 1px 4px #3e3e3e;
-    display: flex;
-    width: 500px;
-    height: 320px;
-    justify-content: center;
-    align-items: center;
     border-radius: 0 32px 32px 0;
 }
 .food_link:hover,
