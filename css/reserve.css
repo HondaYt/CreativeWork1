@@ -219,41 +219,66 @@ option[selected][disabled] {
 .tR {
     text-align: right;
 }
-.reserve_next {
+.reserve_button_wrap {
+    padding: 0 0 64px;
+}
+
+.reserve_button {
+    width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 250px;
     height: 64px;
     border-radius: 50vh;
-    border: 3px solid #71ceda;
-    background-color: #fff;
-    color: #71ceda;
+    
     font-size: 18px;
     position: relative;
 }
-.reserve_next::after {
+.reserve_button::after {
     position: absolute;
-    right: 20px;
-    border-top: 3px solid #71ceda;
-    border-right: 3px solid #71ceda;
     width: 8px;
     height: 8px;
-    transform: rotate(45deg);
     content: '';
 }
-.reserve_next:hover:after {
+.reserve_button:hover:after {
     border-top: 3px solid #fff;
     border-right: 3px solid #fff;
 }
-.reserve_next:hover {
-    background-color: #71ceda;
+.reserve_button:hover{
     color: #fff;
 }
 
-.reserve_next_wrap {
-    width: 100%;
-    padding: 0 0 64px;
+.reserve_next{
+    width: 250px;
+    border: 3px solid #71ceda;
+    background-color: #fff;
+    color: #71ceda;
+}
+.reserve_next::after{
+    right: 20px;
+    border-top: 3px solid #71ceda;
+    border-right: 3px solid #71ceda;
+    transform: rotate(45deg);
+}
+.reserve_next:hover{
+    background-color: #71ceda;
+}
+
+
+.reserve_back{
+    width: 180px;
+    border: 3px solid #6f6f6f;
+    background-color: #fff;
+    color: #6f6f6f;
+}
+.reserve_back::after{
+    left: 20px;
+    border-top: 3px solid #6f6f6f;
+    border-right: 3px solid #6f6f6f;
+    transform: rotate(225deg);
+}
+.reserve_back:hover{
+    background-color: #6f6f6f;
 }
