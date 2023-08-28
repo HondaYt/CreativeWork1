@@ -282,3 +282,11 @@ option[selected][disabled] {
 .reserve_back:hover{
     background-color: #6f6f6f;
 }
+.form_input_cf{
+    padding: 0 8px 0;
+    width: 100%;
+    height: 32px;
+    border-radius: 0.75vh;
+    border: #71ceda 2px solid;
+    font-size: 16px;
+}

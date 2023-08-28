@@ -61,45 +61,64 @@
                                 <th class="form_subtitle">名</th>
                             </tr>
                             <tr>
-                                <td>田中</td>
-                                <td>太郎</td>
+                                <td class="form_input_cf">田中</td>
+                                <td class="form_input_cf">太郎</td>
                             </tr>
                             <tr>
                                 <th colspan="2" class="form_title">フリガナ</th>
                             </tr>
+
                             <tr>
                                 <th class="form_subtitle">セイ</th>
                                 <th class="form_subtitle">メイ</th>
                             </tr>
                             <tr>
-                                <td>タナカ</td>
-                                <td>タロウ</td>
+                                <td class="form_input_cf">タナカ</td>
+                                <td class="form_input_cf">タロウ</td>
                             </tr>
                             <tr>
                                 <th colspan="2" class="form_title">年齢</th>
                             </tr>
                             <tr>
-                                <td colspan="2">20</td>
+                                <td colspan="2"><input type="number" min="0" class="form_input" placeholder="20"></td>
                             </tr>
                             <tr>
                                 <th colspan="2" class="form_title">性別</th>
                             </tr>
                             <tr>
                                 <td colspan="2">
+                                    <fieldset class="form_sex">
+                                        <label>
+                                            <input type="radio" name="sex">
                                             男性
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="sex">
+                                            女性
+                                        </label>
+                                    </fieldset>
                                 </td>
                             </tr>
                             <tr>
                                 <th colspan="2" class="form_title">メールアドレス</th>
                             </tr>
                             <tr>
-                                <td colspan="2">tanaka@mail.com</td>
+                                <td colspan="2"><input type="text" class="form_input" placeholder="tanaka@mail.com">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th colspan="2" class="form_title">メールアドレス(確認用)</th>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><input type="text" class="form_input" placeholder="tanaka@mail.com">
+                                </td>
                             </tr>
                             <tr>
                                 <th colspan="2" class="form_title">電話番号</th>
                             </tr>
                             <tr>
-                                <td colspan="2">090-0000-0000</td>
+                                <td colspan="2"><input type="number" class="form_input" placeholder="090-0000-0000">
+                                </td>
                             </tr>
                             <tr>
                                 <th colspan="2" class="form_title">ご予約</th>
@@ -109,21 +128,31 @@
                                 <td class="form_subtitle">時間</td>
                             </tr>
                             <tr>
-                                <td>2023/04/01</td>
-                                <td>午後 6:30</td>
+                                <td><input type="date" class="form_input"></td>
+                                <td><input type="time" class="form_input"></td>
                             </tr>
                             <tr>
                                 <th colspan="2" class="form_title">ご予約人数</th>
                             </tr>
                             <tr>
-                                <td colspan="2">1<span class="form_unit">人</span>
+                                <td colspan="2">
+                                    <input type="number" min="0" class="form_input form_people" placeholder="1"><span
+                                        class="form_unit">人</span>
                                 </td>
                             </tr>
                             <tr>
                                 <th colspan="2" class="form_title">コース</th>
                             </tr>
                             <tr>
-                                <td colspan="2">60分コース</td>
+                                <td colspan="2">
+                                    <select class="form_input">
+                                        <option selected disabled>選択してください。</option>
+                                        <option>30分コース</option>
+                                        <option>60分コース</option>
+                                        <option>90分コース</option>
+                                        <option>120分コース</option>
+                                    </select>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
