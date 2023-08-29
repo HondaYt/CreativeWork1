@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reserve.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,9 +21,9 @@
         <nav>
             <h1 class="logo"><a href="index.html"><img src="images/logo.svg" alt="サウナタウコ"></a></h1>
             <ul class="navmenu">
-                <li><a href="concept.html">コンセプト</a></li>
-                <li><a href="menu.html">メニュー</a></li>
-                <li><a href="#contact">コンタクト</a></li>
+                <li class="nav_op"><a href="index.html#concept">コンセプト</a></li>
+                <li class="nav_op"><a href="menu.html">メニュー</a></li>
+                <li class="nav_op"><a href="#contact">コンタクト</a></li>
                 <li><a href="reserve.html">
                         <div class="nav_reserve">ご予約</div>
                     </a></li>
@@ -80,7 +80,8 @@
                                 <th colspan="2" class="form_title">年齢</th>
                             </tr>
                             <tr>
-                                <td colspan="2"><input type="number" min="0" class="form_input" placeholder="20"></td>
+                                <td colspan="2"><input type="number" min="0" class="form_input form_small" placeholder="20"><span
+                                    class="form_unit">歳</span></td>
                             </tr>
                             <tr>
                                 <th colspan="2" class="form_title">性別</th>
@@ -117,7 +118,7 @@
                                 <th colspan="2" class="form_title">電話番号</th>
                             </tr>
                             <tr>
-                                <td colspan="2"><input type="number" class="form_input" placeholder="090-0000-0000">
+                                <td colspan="2"><input type="tel" class="form_input" placeholder="090-0000-0000">
                                 </td>
                             </tr>
                             <tr>
@@ -136,7 +137,7 @@
                             </tr>
                             <tr>
                                 <td colspan="2">
-                                    <input type="number" min="0" class="form_input form_people" placeholder="1"><span
+                                    <input type="number" min="0" class="form_input form_small" placeholder="1"><span
                                         class="form_unit">人</span>
                                 </td>
                             </tr>
@@ -147,10 +148,10 @@
                                 <td colspan="2">
                                     <select class="form_input">
                                         <option selected disabled>選択してください。</option>
-                                        <option>30分コース</option>
-                                        <option>60分コース</option>
-                                        <option>90分コース</option>
-                                        <option>120分コース</option>
+                                        <option>30分コース（1,500円）</option>
+                                        <option>60分コース（3,000円）</option>
+                                        <option>90分コース（4,500円）</option>
+                                        <option>120分コース（6,000円）</option>
                                     </select>
                                 </td>
                             </tr>
@@ -297,7 +298,7 @@
                 <h2>contact</h2>
                 <p>お問い合わせはお電話、またはInstagramのDMにて承っております。</p>
             </div>
-            <a href="https://www.instagram.com/"><img src="images/instagram.svg" alt="instagram"></a>
+            <a href="https://www.instagram.com/"  class="instagram"><img src="images/instagram.svg" alt="instagram"></a>
 
         </div> <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d520.2419600009422!2d135.50299331433283!3d34.70630062989415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e69449e0775d%3A0x3a2a073efc2ceb7c!2zRUND44Kz44Oz44OU44Ol44O844K_5bCC6ZaA5a2m5qChMuWPt-mkqA!5e0!3m2!1sja!2sjp!4v1690526195363!5m2!1sja!2sjp"

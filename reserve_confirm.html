@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reserve.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,9 +21,9 @@
         <nav>
             <h1 class="logo"><a href="index.html"><img src="images/logo.svg" alt="サウナタウコ"></a></h1>
             <ul class="navmenu">
-                <li><a href="concept.html">コンセプト</a></li>
-                <li><a href="menu.html">メニュー</a></li>
-                <li><a href="#contact">コンタクト</a></li>
+                <li class="nav_op"><a href="index.html#concept">コンセプト</a></li>
+                <li class="nav_op"><a href="menu.html">メニュー</a></li>
+                <li class="nav_op"><a href="#contact">コンタクト</a></li>
                 <li><a href="reserve.html">
                         <div class="nav_reserve">ご予約</div>
                     </a></li>
@@ -48,121 +48,67 @@
                 <div class="reserve_count">3</div>
             </div>
         </div>
-        <div class="form_wrap">
-            <form action="reserve_confirm.html">
-                <div class="reserve_form">
+        <div class="form_wrap form_cf_wrap">
+            <form action="reserve_thankyou.html">
+                <div class="reserve_form_cf">
                     <table>
                         <tbody>
                             <tr>
-                                <th colspan="2" class="form_title">お名前</th>
+                                <th class="form_cf_title">お名前</th>
+                                <td class="form_cf_data">田中 太郎</td>
                             </tr>
                             <tr>
-                                <th class="form_subtitle">姓</th>
-                                <th class="form_subtitle">名</th>
+                                <th class="form_cf_title">フリガナ</th>
+                                <td class="form_cf_data">タナカ タロウ</td>
                             </tr>
                             <tr>
-                                <td class="form_input_cf">田中</td>
-                                <td class="form_input_cf">太郎</td>
-                            </tr>
-                            <tr>
-                                <th colspan="2" class="form_title">フリガナ</th>
+                                <th class="form_cf_title">年齢</th>
+                                <td class="form_cf_data">20<span class="form_unit">歳</span></td>
                             </tr>
 
                             <tr>
-                                <th class="form_subtitle">セイ</th>
-                                <th class="form_subtitle">メイ</th>
+                                <th class="form_cf_title">性別</th>
+                                <td class="form_cf_data">男性</td>
+                            </tr>
+
+                            <tr>
+                                <th class="form_cf_title">メールアドレス</th>
+                                <td class="form_cf_data">tanaka@mail.com</td>
+                            </tr>
+
+                            <tr>
+                                <th class="form_cf_title">電話番号</th>
+                                <td class="form_cf_data">090-0000-0000</td>
+                            </tr>
+
+                            <tr>
+                                <th class="form_cf_title">ご予約日</th>
+                                <td class="form_cf_data">2023/04/01</td>
                             </tr>
                             <tr>
-                                <td class="form_input_cf">タナカ</td>
-                                <td class="form_input_cf">タロウ</td>
+                                <th class="form_cf_title">ご予約時間</th>
+                                <td class="form_cf_data">18:30</td>
                             </tr>
+
                             <tr>
-                                <th colspan="2" class="form_title">年齢</th>
+                                <th class="form_cf_title">ご予約人数</th>
+                                <td class="form_cf_data">1<span class="form_unit">人</span></td>
                             </tr>
+
                             <tr>
-                                <td colspan="2"><input type="number" min="0" class="form_input" placeholder="20"></td>
+                                <th class="form_cf_title">コース</th>
+                                <td class="form_cf_data">60分コース</td>
                             </tr>
-                            <tr>
-                                <th colspan="2" class="form_title">性別</th>
-                            </tr>
-                            <tr>
-                                <td colspan="2">
-                                    <fieldset class="form_sex">
-                                        <label>
-                                            <input type="radio" name="sex">
-                                            男性
-                                        </label>
-                                        <label>
-                                            <input type="radio" name="sex">
-                                            女性
-                                        </label>
-                                    </fieldset>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th colspan="2" class="form_title">メールアドレス</th>
-                            </tr>
-                            <tr>
-                                <td colspan="2"><input type="text" class="form_input" placeholder="tanaka@mail.com">
-                                </td>
-                            </tr>
-                            <tr>
-                                <th colspan="2" class="form_title">メールアドレス(確認用)</th>
-                            </tr>
-                            <tr>
-                                <td colspan="2"><input type="text" class="form_input" placeholder="tanaka@mail.com">
-                                </td>
-                            </tr>
-                            <tr>
-                                <th colspan="2" class="form_title">電話番号</th>
-                            </tr>
-                            <tr>
-                                <td colspan="2"><input type="number" class="form_input" placeholder="090-0000-0000">
-                                </td>
-                            </tr>
-                            <tr>
-                                <th colspan="2" class="form_title">ご予約</th>
-                            </tr>
-                            <tr>
-                                <td class="form_subtitle">日付</td>
-                                <td class="form_subtitle">時間</td>
-                            </tr>
-                            <tr>
-                                <td><input type="date" class="form_input"></td>
-                                <td><input type="time" class="form_input"></td>
-                            </tr>
-                            <tr>
-                                <th colspan="2" class="form_title">ご予約人数</th>
-                            </tr>
-                            <tr>
-                                <td colspan="2">
-                                    <input type="number" min="0" class="form_input form_people" placeholder="1"><span
-                                        class="form_unit">人</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th colspan="2" class="form_title">コース</th>
-                            </tr>
-                            <tr>
-                                <td colspan="2">
-                                    <select class="form_input">
-                                        <option selected disabled>選択してください。</option>
-                                        <option>30分コース</option>
-                                        <option>60分コース</option>
-                                        <option>90分コース</option>
-                                        <option>120分コース</option>
-                                    </select>
-                                </td>
-                            </tr>
+
                         </tbody>
                     </table>
+                    <div class="fee_wrap"><p class="fee">料金 : 3,000円</p></div>
                 </div>
-
-                <div class="reserve_button_wrap">
+                <div class="reserve_cf_button_wrap">
                     <button type="submit" class="reserve_button reserve_next">次へ進む
                     </button>
                 </div>
-                <div class="reserve_button_wrap">
+                <div class="reserve_cf_button_wrap">
                     <button type="button" onclick="history.back()" class="reserve_button reserve_back">戻る
                     </button>
                 </div>
@@ -176,7 +122,7 @@
                 <h2>contact</h2>
                 <p>お問い合わせはお電話、またはInstagramのDMにて承っております。</p>
             </div>
-            <a href="https://www.instagram.com/"><img src="images/instagram.svg" alt="instagram"></a>
+            <a href="https://www.instagram.com/" class="instagram"><img src="images/instagram.svg" alt="instagram"></a>
 
         </div> <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d520.2419600009422!2d135.50299331433283!3d34.70630062989415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e69449e0775d%3A0x3a2a073efc2ceb7c!2zRUND44Kz44Oz44OU44Ol44O844K_5bCC6ZaA5a2m5qChMuWPt-mkqA!5e0!3m2!1sja!2sjp!4v1690526195363!5m2!1sja!2sjp"
