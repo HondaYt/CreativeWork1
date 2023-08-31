@@ -30,8 +30,6 @@
     justify-content: center;
 }
 
-
-
 .concept_title {
     text-align: center;
     padding: 128px 0;
@@ -95,7 +93,8 @@
     font-size: 40px;
     margin: 0 auto;
 }
-.food_link,.drink_link{
+.food_link,
+.drink_link {
     display: flex;
     width: 30vw;
     height: 320px;
@@ -103,8 +102,7 @@
     align-items: center;
 }
 .food_link {
-    background: url(../images/food_link.jpg)
-        no-repeat center;
+    background: url(../images/food_link.jpg) no-repeat center;
     background-size: cover;
     color: #3e3e3e;
     text-shadow: -1px -1px 4px #fff, -1px 0 4px #fff, -1px 1px 4px #fff,

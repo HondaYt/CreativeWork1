@@ -1,4 +1,6 @@
-*,*::after,*::before{
+*,
+*::after,
+*::before {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -14,7 +16,6 @@
     /* border: tomato solid; */
 }
 
-
 /* ヘッダー */
 nav {
     width: 100%;
@@ -25,8 +26,9 @@ nav {
     align-items: center;
     font-size: 20px;
 }
-.logo:hover,.nav_op:hover{
-    opacity:0.7;
+.logo:hover,
+.nav_op:hover {
+    opacity: 0.7;
 }
 
 .logo {
@@ -46,6 +48,7 @@ nav {
     justify-content: space-around;
     align-items: center;
 }
+
 .nav_reserve {
     display: flex;
     width: 128px;
@@ -64,20 +67,13 @@ nav {
     align-items: center;
     position: relative;
 }
-.nav_reserve::after{
+.nav_reserve::after {
     position: absolute;
     display: flex;
     width: 128px;
     height: 8vh;
     border-radius: 10px;
     box-shadow: none;
-    color: #fff;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 500;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
     content: "";
 }
 .nav_reserve:hover {
@@ -119,13 +115,6 @@ nav {
     height: 70px;
     border-radius: 50vh;
     box-shadow: none;
-    color: #fff;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 500;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
     content: "";
 }
 .reserve_bar:hover {
@@ -153,8 +142,8 @@ footer {
 .contact_title p {
     font-size: 14px;
 }
-.instagram img:hover{
-    opacity:0.7;
+.instagram img:hover {
+    opacity: 0.7;
 }
 .google_maps {
     width: 100%;
@@ -196,7 +185,7 @@ small {
     .contact_about_contents {
         width: 100%;
     }
-    .contact_about{
+    .contact_about {
         flex-flow: column;
         gap: 16px;
     }
