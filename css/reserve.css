@@ -112,6 +112,9 @@ td {
 .reserve_form table {
     width: 100%;
 }
+.form_input::placeholder {
+    color: #d0d0d0;
+}
 .form_input {
     padding: 0 8px 0;
     width: 100%;
