@@ -37,6 +37,13 @@ nav {
     height: 8vh;
     align-items: center;
 }
+.logo img{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
 .logo a {
     margin-left: 32px;
 }
